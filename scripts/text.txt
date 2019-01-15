@@ -1,0 +1,5 @@
+apt-get update
+apt-get install -y python python-pip 
+pip install flask
+create or copy app.py to /opt/app.py
+FLASK_APP=app.py flask run --host=0.0.0.0
