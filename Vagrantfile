@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
 		#base box will be bento ubuntu
 		dockervm.vm.box = "bento/ubuntu-16.04"
 		dockervm.vm.hostname = "docker-aws-box"
-		dockervm.vm.network "private_network", ip: "10.10.6.2"
+		dockervm.vm.network "private_network", ip: "10.10.6.1"
 		
 		dockervm.vm.network :forwarded_port, host: 8080, guest: 8080
 	    dockervm.vm.network :forwarded_port, host: 5000, guest: 5000
