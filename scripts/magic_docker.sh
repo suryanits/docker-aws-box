@@ -35,6 +35,7 @@ source venv/bin/activate
 pip install awscli
 pip install --upgrade pip
 pip install boto3
+pip install jmespath-terminal
 
 echo "Install NodeJS 8"
 sudo su

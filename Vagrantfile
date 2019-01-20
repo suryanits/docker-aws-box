@@ -10,7 +10,8 @@ Vagrant.configure("2") do |config|
 		
 		dockervm.vm.network :forwarded_port, host: 8080, guest: 8080
 	    dockervm.vm.network :forwarded_port, host: 5000, guest: 5000
-	    dockervm.vm.network :forwarded_port, host: 5001, guest: 5001
+		dockervm.vm.network :forwarded_port, host: 5001, guest: 5001
+		dockervm.vm.network :forwarded_port, host: 3000, guest: 3000
 		dockervm.vm.synced_folder '/Users/surbapu/developer', '/mac_dev', disabled: false
 	    dockervm.vm.synced_folder '.', '/vagrant', disabled: false
 	    #memory is set to 1GB
